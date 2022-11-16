@@ -1,0 +1,308 @@
+@font-face {
+    font-family:"Permanent" ;
+    src: url(..//tipografia/Permanent.ttf);
+}
+
+@font-face {
+    font-family:"Special" ;
+    src: url(..//tipografia/Special.ttf);
+}
+@font-face {
+    font-family:"Raleway" ;
+    src: url(..//tipografia/Raleway-VariableFont_wght.ttf);
+}
+
+
+
+body{
+    font-family: "Permanent"
+}
+
+.navbar-brand{
+    width: 10%;
+    color: black;
+}
+.nav-item{
+    padding: 15px;
+}
+.nav-link{
+    font-size: 25px;
+    color: black;
+}
+.nav-link:hover{
+    color: red;
+}
+h1{
+    font-size: 30px;
+}
+.logo img{
+    width:100%;
+    align-items: center;
+}
+.logo img:hover{
+background-color: black;
+}
+
+.agotado{
+    width: 100%;
+}
+.caja{
+    border: 2px rgb(57, 55, 55) solid;
+    padding: 3px;
+}
+.noticia p {
+     font-family: "Special";
+     padding: 15px;
+}
+.noticia{
+    padding: 35px;
+}
+
+.boton1{
+
+ text-decoration: none;
+ color: white;
+ padding: 9px;
+ background-color: brown;
+ border-radius: 7px;
+ border: 1px solid;
+
+}
+.boton1:hover{
+    color: black;
+    background-color: rgba(165, 42, 42, 0.656);
+}
+
+footer{
+    background-color: brown;
+}
+
+i:hover{
+    color: white; 
+}
+i{
+    color: black;
+    font-size: 40px;
+    margin: 10px;
+}
+
+
+.firma img{
+    display: flex;
+    width: 30%;
+}
+.titulo{
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.redes{
+    padding: 10px;
+}
+.fotos img{
+    width: 100%;
+}
+.fotos{
+    padding: 5px;
+}
+
+.discos img{
+    width: 70%;
+    margin: 35px;
+}
+.encabezado{
+    font-size: 40px;
+    margin: 4px;
+    color: black;
+    background-color: brown;
+    
+}
+
+.encabezado p{
+    
+    animation: animacion1;
+    animation-duration: 10s;
+    animation-direction: center;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+}
+ 
+.b1{
+ position: relative;
+ width: 100%;
+
+}
+
+.b1:hover{
+    filter: blur(1px);
+    filter: grayscale(40%);
+
+}
+
+.b2{
+    width:40%;
+    position: absolute;
+    top: 28%;
+    left: 18%;
+   
+}
+
+.b2:hover{
+    animation-name: rotar;
+    animation-duration:3s;
+    transform-origin: center;
+    animation-duration: alternate;
+   
+
+}
+.b3{
+    width:40%;
+    position: absolute;
+    top: 28%;
+    right:-4%;
+   
+}
+
+.b3:hover{
+    animation-name: rotar;
+    animation-duration:3s;
+    transform-origin: center;
+    animation-duration: alternate;
+   
+
+}
+.b4 img{
+    box-shadow: 0  8px 15px black
+}
+.b4:hover{
+    transform:scale(1.3);
+   
+}
+.discos p {
+    font-size: 20px;
+}
+.cuadro{
+    border: 2px solid rgb(123, 25, 25);
+    padding: 15px;
+  
+}
+
+.c2{
+    padding: 55px;
+
+}
+
+.entradas{
+    padding: 9px;
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    border-radius: 7px;
+    border: 1px solid black;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+   
+}
+   .entradas:hover{
+       color: black;
+       background-color: rgba(165, 42, 42, 0.656);
+   }
+   
+.formulario{
+    color: white;
+    background-color: rgba(95, 4, 4, 0.981);
+    padding: 14px;
+    margin: 20px;
+   width: 50%;
+   position: relative;
+   left:23%;
+}
+
+.boton2{
+    text-decoration: none;
+    color: white;
+    padding: 9px;
+    margin-top: 10px;
+    background-color: brown;
+    border-radius: 7px;
+    border: 1px solid;
+   }
+
+   .boton2:hover{
+       color: black;
+       background-color: rgba(165, 42, 42, 0.656);
+   }
+h2 {animation-name: anim3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    color: black;
+    transform:scale(1.3)
+}
+
+@keyframes animacion1{
+    0%{
+        transform:translatex(0) }
+    50%{
+        transform:translatex(100px)
+    }     
+    
+}
+
+
+@keyframes rotar {
+
+    0%{
+        transform: translate(0) rotate(0);
+    }
+    100%{
+        transform: translate(50px)rotate(30deg);
+    }
+   
+
+}
+@keyframes anim{
+    0% {background-color: rgb(255, 255, 255);} /*Amarillo*/
+    25% {background-color: #f80;}
+   50% {background-color: rgb(255, 8, 0);} /*Negro*/
+   75% {background-color: rgba(133, 6, 197, 0.852);}
+  100% {background-color: rgba(170, 2, 122, 0.706);} /*Otra vez amarillo*/
+}
+
+@keyframes anim3{
+   
+        0%{transform: scale(1)}
+        50%{transform: scale(1.25)}
+        100%{transform: scale(1)}
+ }
+
+
+ @media screen and (min-width: 481px) and (max-width: 820px){
+.b2 img{
+    width: 20%;
+}
+.b3 img{
+    width: 20%;
+}
+.logo{
+    width: 200%;
+}
+
+ @media screen and (min-width:0px)  and (max-width: 580px){
+.logo{
+    width: 200%;
+}
+    .b2 {
+        display: none;
+       
+    }
+.b3{
+    display: none;
+}
+
+.firma{width: 500%;}
+ }
