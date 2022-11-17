@@ -101,9 +101,15 @@ i{
     padding: 10px;
 }
 .fotos img{
+    filter: grayscale(100%);
     width: 100%;
 }
+
+.fotos img:hover{
+    filter: grayscale(0%);
+}
 .fotos{
+    
     padding: 5px;
 }
 
@@ -127,8 +133,9 @@ i{
     animation-iteration-count: infinite;
     transition-timing-function: ease;
 }
- 
+
 .b1{
+    z-index: 1;
  position: relative;
  width: 100%;
 
@@ -141,10 +148,11 @@ i{
 }
 
 .b2{
-    width:40%;
+   
+    width:30%;
     position: absolute;
-    top: 28%;
-    left: 18%;
+    top: 35%;
+    left: 25%;
    
 }
 
@@ -157,10 +165,11 @@ i{
 
 }
 .b3{
-    width:40%;
+
+    width:30%;
     position: absolute;
-    top: 28%;
-    right:-4%;
+    top: 35%;
+    right:-1%;
    
 }
 
