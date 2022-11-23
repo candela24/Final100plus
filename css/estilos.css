@@ -293,26 +293,33 @@ h2 {animation-name: anim3;
 
  @media screen and (min-width: 481px) and (max-width: 820px){
 .b2 img{
-    width: 20%;
+   display: none;
 }
 .b3 img{
-    width: 20%;
+    display: none;
 }
 .logo{
     width: 200%;
 }
+.fotos img{
+    filter: grayscale(0%);
+}
+
+
 
  @media screen and (min-width:0px)  and (max-width: 580px){
 .logo{
     width: 200%;
 }
-    .b2 {
-        display: none;
-       
-    }
-.b3{
-    display: none;
-}
 
+.b2 img{
+    display: none;
+ }
+ .b3 img{
+     display: none;
+ }
 .firma{width: 500%;}
  }
+ .fotos img{
+    filter: grayscale(0%);
+}
